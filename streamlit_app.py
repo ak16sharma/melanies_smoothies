@@ -58,7 +58,7 @@ if ingdredients_list:
     for fruit_chosen in ingredients_list:
       ingredients_string += fruit_chosen+''
       smoothiefroot_response = requests.get("https://fruityvice.com/api/fruit/all")
-  sf_df = st.dataframe(data = smoothiefroot_response.json(),use_container_width = True)
+      sf_df = st.dataframe(data = smoothiefroot_response.json(),use_container_width = True)
 
 
 
